@@ -95,7 +95,7 @@ For this tutorial, we will configure a dev container for Go development, ensurin
    
    `go mod init go-setup`
 
-### Step 2. Write and Run a Program That "Prints Hello COMP433"
+### Step 2. Write and Run a Program That "Prints Hello COMP423"
 
 1. Create a new file named "main.go"
     `touch main.go`
