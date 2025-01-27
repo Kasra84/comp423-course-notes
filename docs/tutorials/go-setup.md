@@ -94,7 +94,7 @@ For this tutorial, we will configure a dev container for Go development, ensurin
 ```
     {
   "name": "Go Dev Container",
-  "image": "mcr.microsoft.com/devcontainers/go"
+  "image": "mcr.microsoft.com/devcontainers/go",
   "customizations": {
     "vscode": {
       "extensions": ["golang.go"]
