@@ -1,4 +1,4 @@
-# Setting up a DevContainer Project for Go
+# Setting up a dev container for Go
 
 * Primary author: [Kasra Zamani](https://github.com/Kasra84)
 * Reviewer: [Ethan Bonsall](https://github.com/ethanbonsall)
@@ -37,9 +37,39 @@
  4. Create a README file:
 
 
-`echo "# Go Setup" > README.md
+```
+echo "# Go Setup" > README.md
 git add README.md
-git commit -m "Initial commit with README"`
+git commit -m "Initial commit with README"
+```
+### Step 2. Create a Remote Repository on GitHub
+#### (1) Log in to your GitHub account and navigate to the Create a New Repository page.
+
+#### (2) Fill in the details as follows:
+
+- Repository Name: Go Tutorial
+- Description: "Tutorial to setup a go container."
+- Visibility: Public
+
+#### (3) Do not initialize the repository with a README, .gitignore, or license.
+
+#### (4) Click Create Repository.
+
+### Step 3. Link your Local Repository to GitHub
+#### (1) Add the GitHub repository as a remote:
+
+
+`git remote add origin https://github.com/<your-username>/Go-Tutorial.git`
+!!! info "Replace <your-username> with your GitHub username."
+
+#### (2) Check your default branch name with the subcommand git branch. If it's not main, rename it to main with the following command: git branch -M main. Old versions of git choose the name master for the primary branch, but these days main is the standard primary branch name.
+
+#### (3) Push your local commits to the GitHub repository:
+
+
+`git push --set-upstream origin main`
+
+#### (4) Back in your web browser, refresh your GitHub repository to see that the same commit you made locally has now been pushed to remote. You can use git log locally to see the commit ID and message which should match the ID of the most recent commit on GitHub. This is the result of pushing your changes to your remote repository.
 
 
 ## Part 2. Setting Up the Development Environment
